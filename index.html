@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стоматология «Акжайык» — бережное лечение, профессиональная гигиена и забота о вашей улыбке.">
+  <title>Акжайык — стоматология с заботой</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Акжайык — на главную">
+        <img src="logo-akzhayik.png" alt="Логотип стоматологии Акжайык">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Услуги</a>
+        <a href="#about">О клинике</a>
+        <a href="#team">Преимущества</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav-cta" href="#appointment">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Стоматология, где вам спокойно</div>
+          <h1>Улыбайтесь<br> <span>уверенно.</span></h1>
+          <p class="hero-text">Заботимся о здоровье ваших зубов бережно, внимательно и с уважением к каждому пациенту.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#appointment">Записаться на приём <span>↗</span></a>
+            <a class="button button-quiet" href="#services">Наши услуги <span>↓</span></a>
+          </div>
+          <div class="hero-note"><div class="note-icon">✦</div><p><strong>Ваша улыбка — наша забота</strong><br><span>Понятно объясняем каждый этап лечения</span></p></div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-card">
+            <div class="visual-top"><span class="live-dot"></span> Забота на каждом этапе <span class="sparkle">✦</span></div>
+            <div class="tooth-art" aria-hidden="true">
+              <svg viewBox="0 0 340 340" role="img" aria-label="Иллюстрация здорового зуба">
+                <defs><linearGradient id="tooth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dff8ed"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#006c48" flood-opacity=".15"/></filter></defs>
+                <circle cx="170" cy="170" r="135" fill="#c8f3df"/>
+                <circle cx="170" cy="170" r="108" fill="#a4e8c8"/>
+                <path d="M112 78 C78 77 65 107 72 145 C78 180 99 197 109 234 C118 267 132 278 145 251 L165 205 Q170 194 177 207 L197 251 C210 278 224 267 233 234 C243 197 264 180 270 145 C277 107 264 77 230 78 C206 78 190 92 170 103 C150 92 136 78 112 78Z" fill="url(#tooth)" filter="url(#shadow)"/>
+                <path d="M115 105 Q99 116 104 143" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+                <path d="M222 114 Q235 128 230 146" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+                <path d="M92 55 l7 -15 M84 68 l-16 -3 M245 54 l-6 -14 M257 68 l16 -4" stroke="#07985d" stroke-width="5" stroke-linecap="round"/>
+                <path d="M65 207 C45 191 43 177 48 166 C58 183 70 187 81 190" fill="#0aaa6a"/>
+                <path d="M274 211 C296 195 297 179 291 168 C282 184 270 190 259 193" fill="#0aaa6a"/>
+              </svg>
+            </div>
+            <div class="visual-bottom"><div class="mini-heart">♡</div><div><strong>Комфорт и доверие</strong><p>От первого визита до результата</p></div><span class="arrow-round">↗</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span>✦</span> Индивидуальный подход</div>
+          <div class="floating-chip chip-bottom"><span class="check">✓</span> План лечения без сюрпризов</div>
+        </div>
+      </div>
+      <div class="container hero-footer"><span>ЗДОРОВЬЕ · ЭСТЕТИКА · ДОВЕРИЕ</span><span>Прокрутите, чтобы узнать больше ↓</span></div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span class="trust-symbol">♡</span><p><strong>Бережное отношение</strong><small>Слушаем и объясняем</small></p></div>
+        <div><span class="trust-symbol">✧</span><p><strong>Современный подход</strong><small>Внимание к деталям</small></p></div>
+        <div><span class="trust-symbol">⌁</span><p><strong>Прозрачный план</strong><small>Обсуждаем до начала</small></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow">Чем мы помогаем</div><h2>Здоровье зубов<br><span>на каждом этапе.</span></h2></div><p>Подберём подходящее решение после осмотра и обсудим все варианты лечения.</p></div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-icon green">✧</div><span class="service-number">01</span><h3>Лечение зубов</h3><p>Помогаем справиться с кариесом и сохранить здоровье зубов.</p><a href="#appointment">Подробнее <span>↗</span></a></article>
+          <article class="service-card"><div class="service-icon mint">☼</div><span class="service-number">02</span><h3>Профгигиена</h3><p>Уход за полостью рта для чистоты, свежести и здоровой улыбки.</p><a href="#appointment">Подробнее <span>↗</span></a></article>
+          <article class="service-card"><div class="service-icon pale">♡</div><span class="service-number">03</span><h3>Эстетическая стоматология</h3><p>Работаем над эстетикой улыбки с учётом ваших пожеланий.</p><a href="#appointment">Подробнее <span>↗</span></a></article>
+          <article class="service-card"><div class="service-icon dark">＋</div><span class="service-number">04</span><h3>Консультация</h3><p>Осмотр, ответы на вопросы и понятный план дальнейших действий.</p><a href="#appointment">Подробнее <span>↗</span></a></article>
+        </div>
+        <p class="small-note">Перечень услуг и возможность проведения процедур уточняются у администратора клиники.</p>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual"><div class="about-circle"></div><div class="about-cross">✚</div><div class="about-label"><span>AKZHAYYK</span><strong>Улыбка начинается<br>с заботы</strong></div><div class="about-sticker">ВАМ<br>ЗДЕСЬ<br>РАДЫ <span>♡</span></div></div>
+        <div class="about-copy"><div class="eyebrow">О клинике</div><h2>Лечение, в котором<br><span>всё понятно.</span></h2><p>Мы хотим, чтобы визит к стоматологу был спокойным и предсказуемым. Поэтому уделяем внимание не только лечению, но и общению с пациентом.</p><div class="about-points"><div><span>01</span><p><strong>Сначала выслушаем</strong><small>Учитываем ваши ощущения, вопросы и пожелания.</small></p></div><div><span>02</span><p><strong>Объясним варианты</strong><small>Расскажем о возможных решениях простым языком.</small></p></div><div><span>03</span><p><strong>Договоримся о плане</strong><small>Обсудим следующие шаги до начала лечения.</small></p></div></div><a class="text-link" href="#appointment">Записаться на консультацию <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section benefits-section" id="team">
+      <div class="container"><div class="center-heading"><div class="eyebrow">Почему «Акжайык»</div><h2>В центре внимания — <span>вы.</span></h2><p>Создаём условия, в которых можно задавать вопросы и чувствовать себя увереннее.</p></div>
+        <div class="benefit-grid"><div class="benefit"><div class="benefit-icon">♡</div><h3>Внимание к пациенту</h3><p>Уделяем время вашим вопросам и самочувствию.</p></div><div class="benefit"><div class="benefit-icon">⌕</div><h3>Понятные объяснения</h3><p>Обсуждаем рекомендации и возможные варианты.</p></div><div class="benefit"><div class="benefit-icon">✧</div><h3>Аккуратный подход</h3><p>Стремимся сделать каждый этап максимально комфортным.</p></div></div>
+      </div>
+    </section>
+
+    <section class="appointment-section" id="appointment"><div class="container appointment-grid"><div class="appointment-copy"><div class="eyebrow light"><span></span> Первый шаг к здоровой улыбке</div><h2>Давайте позаботимся<br>о вашей <span>улыбке.</span></h2><p>Оставьте заявку — администратор свяжется с вами, чтобы уточнить удобное время.</p><div class="appointment-tip"><span>✦</span> Первичная заявка не обязывает вас к лечению.</div></div>
+      <form class="appointment-form" id="appointmentForm">
+        <h3>Записаться на приём</h3><p>Заполните форму, и мы свяжемся с вами.</p>
+        <label for="name">Ваше имя</label><input id="name" name="name" type="text" placeholder="Как к вам обращаться?" required>
+        <label for="phone">Номер телефона</label><input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+        <label for="service">Что вас интересует?</label><select id="service" name="service"><option value="Консультация">Консультация</option><option value="Лечение зубов">Лечение зубов</option><option value="Профессиональная гигиена">Профессиональная гигиена</option><option value="Эстетическая стоматология">Эстетическая стоматология</option><option value="Другой вопрос">Другой вопрос</option></select>
+        <button class="button button-primary submit-button" type="submit">Отправить заявку <span>↗</span></button>
+        <div class="form-message" id="formMessage" role="status"></div>
+        <small>Нажимая кнопку, вы соглашаетесь на обратную связь по указанным контактам.</small>
+      </form>
+    </div></section>
+  </main>
+
+  <footer class="footer" id="contacts"><div class="container footer-main"><div class="footer-brand"><img src="logo-akzhayik.png" alt="Акжайык"><p>Забота о здоровье вашей улыбки.</p></div><div class="footer-col"><strong>Навигация</strong><a href="#services">Услуги</a><a href="#about">О клинике</a><a href="#team">Преимущества</a></div><div class="footer-col"><strong>Контакты</strong><p>Телефон: <a href="tel:+77072650076">+7 (707) 265-00-76</a></p><p>Адрес: <span>Проспект Улы Дала,65/1</span></p><p>График: <span>09:00-21:00 по предварительной записи</span></p></div><div class="footer-call"><span>Есть вопросы?</span><a class="button button-outline" href="#appointment">Связаться с нами ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Стоматология «Акжайык»</span><span>С заботой о вашей улыбке ♡</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
